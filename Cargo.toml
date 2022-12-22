@@ -5,7 +5,7 @@ edition = "2021"
 authors = ["Johanna Sörngård (jsorngard@gmail.com)"]
 license = "MIT"
 repository = "https://github.com/JSorngard/branch_hints"
-description = "Crate that provides `likely` and `unlikely` branch hint functions in stable."
+description = "Crate that provides `likely` and `unlikely` branch hint functions in stable Rust."
 
 [dependencies]
 
