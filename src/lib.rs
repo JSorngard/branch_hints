@@ -2,8 +2,7 @@
 //! The functions themselves should mostly be optimized out by the compiler. They are taken directly from the
 //! [hashbrown](https://crates.io/crates/hashbrown) crate, all credit belongs to them.
 
-// Branch prediction hint. This is currently only available on nightly but it
-// consistently improves performance by 10-15%.
+// Branch prediction hint. This is currently only available on nightly.
 #[cfg(feature = "nightly")]
 use core::intrinsics::{likely, unlikely};
 
