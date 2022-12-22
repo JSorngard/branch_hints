@@ -1,5 +1,5 @@
 # branch_hints
-This crate provides the functions [likely] and [unlikely] that work as compiler hints for branching.
+This crate provides the functions `likely` and `unlikely` that work as compiler hints for branching.
 
 These functions enable constructions like
 ```rust
