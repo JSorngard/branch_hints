@@ -24,8 +24,7 @@ use core::intrinsics::{likely, unlikely};
 #[cold]
 fn cold() {}
 
-/// This function returns the boolean it's given and also works as
-/// a compiler hint that the boolean is likely to be true.
+/// This works as a compiler hint that the given boolean is likely to be true.
 /// # Example
 /// ```
 /// # use branch_hints::likely;
@@ -43,8 +42,7 @@ pub fn likely(b: bool) -> bool {
     b
 }
 
-/// This function returns the boolean it's given and also works as
-/// a compiler hint that the boolean is unlikely to be true.
+/// This works as a compiler hint that the given boolean is unlikely to be true.
 /// # Example
 /// ```
 /// # use branch_hints::unlikely;
