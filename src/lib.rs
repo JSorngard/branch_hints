@@ -60,3 +60,20 @@ pub fn unlikely(b: bool) -> bool {
     }
     b
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn check_correctness_of_likely() {
+        assert_eq!(likely(true), true);
+        assert_eq!(likely(false), false);
+    }
+
+    #[test]
+    fn check_correctness_of_unlikely() {
+        assert_eq!(unlikely(true), true);
+        assert_eq!(unlikely(false), false);
+    }
+}
