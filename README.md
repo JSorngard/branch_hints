@@ -9,7 +9,7 @@ if likely(condition) {
     // error handling code
 }
 ```
-and should be optimized away by the compiler.
+and they should be optimized away by the compiler.
 
 # Credit
 The functions are taken directly from the [hashbrown](https://crates.io/crates/hashbrown) crate, all credit belongs to them.
