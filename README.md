@@ -12,4 +12,4 @@ if likely(condition) {
 and should be optimized away by the compiler.
 
 # Credit
-They are taken directly from the [hashbrown](https://crates.io/crates/hashbrown) crate, all credit belongs to them.
+The functions are taken directly from the [hashbrown](https://crates.io/crates/hashbrown) crate, all credit belongs to them.
