@@ -10,6 +10,7 @@
 //!     // error handling code
 //! }
 //! ```
+//! and they should be optimized away by the compiler.
 
 // Branch prediction hint. This is currently only available on nightly.
 #[cfg(feature = "nightly")]
