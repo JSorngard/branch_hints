@@ -49,7 +49,7 @@ pub fn likely(b: bool) -> bool {
 /// # use branch_hints::unlikely;
 /// use rand::prelude::*;
 /// if unlikely(rand::random::<u64>() == 42) {
-///     println!("We didn't find the meaning of life, the universe, and everything");
+///     println!("We found the meaning of life, the universe, and everything");
 /// }
 /// ```
 #[cfg(not(feature = "nightly"))]
