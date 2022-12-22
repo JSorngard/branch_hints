@@ -16,7 +16,7 @@
 #[cfg(feature = "nightly")]
 use core::intrinsics::{likely, unlikely};
 
-// On stable we can use #[cold] to get a equivalent effect: this attributes
+// On stable we can use #[cold] to get a equivalent effect: this attribute
 // suggests that the function is unlikely to be called. This function should
 // be optimized away by the compiler.
 #[cfg(not(feature = "nightly"))]
