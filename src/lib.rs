@@ -14,7 +14,7 @@
 
 // Branch prediction hint. This is currently only available on nightly.
 #[cfg(feature = "nightly")]
-use core::intrinsics::{likely, unlikely};
+pub use core::intrinsics::{likely, unlikely};
 
 // On stable we can use #[cold] to get a equivalent effect: this attribute
 // suggests that the function is unlikely to be called. This function should
