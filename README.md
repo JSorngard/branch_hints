@@ -13,3 +13,6 @@ and they should be optimized away by the compiler.
 
 # Credit
 The functions are taken directly from the [hashbrown](https://crates.io/crates/hashbrown) crate and this crate simply exposes them, all credit belongs to the hashbrown authors.
+
+# Note
+This is a very simple crate for now. If you want more comprehensive functionality, take a look at the [likely_stable](https://docs.rs/likely_stable/latest/likely_stable/) crate.

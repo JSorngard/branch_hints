@@ -1,4 +1,4 @@
-//! This crate provides [likely] and [unlikely] functions that work as compiler hints for branching.
+//! This crate provides [likely] and [unlikely] functions that work as compiler hints for branching in stable rust.
 //! They are taken directly from the [hashbrown](https://crates.io/crates/hashbrown) crate, all credit belongs to them.
 //! These functions enable constructions like
 //! ```
@@ -11,6 +11,9 @@
 //! }
 //! ```
 //! and they should be optimized away by the compiler.
+//! 
+//! # Notes
+//! This is a very simple crate for now. If you want more comprehensive functionality, take a look at the [likely_stable](https://docs.rs/likely_stable/latest/likely_stable/) crate.
 
 // Branch prediction hint. This is currently only available on nightly.
 #[cfg(feature = "nightly")]
