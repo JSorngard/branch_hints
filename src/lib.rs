@@ -11,7 +11,7 @@
 //! }
 //! ```
 //! and they should be optimized away by the compiler.
-//! 
+//!
 //! # Notes
 //! This is a very minimal crate. If you want more comprehensive functionality, take a look at the [likely_stable](https://docs.rs/likely_stable/latest/likely_stable/) crate.
 
