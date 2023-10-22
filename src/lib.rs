@@ -22,7 +22,7 @@ pub use core::intrinsics::{likely, unlikely};
 #[cfg(not(feature = "nightly"))]
 #[inline]
 #[cold]
-fn cold() {}
+const fn cold() {}
 
 /// This works as a compiler hint that the given boolean is likely to be true.
 /// # Example
@@ -35,7 +35,7 @@ fn cold() {}
 /// ```
 #[cfg(not(feature = "nightly"))]
 #[inline]
-pub fn likely(b: bool) -> bool {
+pub const fn likely(b: bool) -> bool {
     if !b {
         cold();
     }
@@ -53,7 +53,7 @@ pub fn likely(b: bool) -> bool {
 /// ```
 #[cfg(not(feature = "nightly"))]
 #[inline]
-pub fn unlikely(b: bool) -> bool {
+pub const fn unlikely(b: bool) -> bool {
     if b {
         cold();
     }
