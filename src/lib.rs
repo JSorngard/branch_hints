@@ -1,4 +1,4 @@
-//! This crate provides [likely] and [unlikely] functions that work as compiler hints for branching.
+//! This crate provides [likely] and [unlikely] functions that work as compiler hints for branching in stable rust.
 //! They are taken directly from the [hashbrown](https://crates.io/crates/hashbrown) crate, all credit belongs to them.
 //! These functions enable constructions like
 //! ```
@@ -11,6 +11,9 @@
 //! }
 //! ```
 //! and they should be optimized away by the compiler.
+//! 
+//! # Notes
+//! This is a very minimal crate. If you want more comprehensive functionality, take a look at the [likely_stable](https://docs.rs/likely_stable/latest/likely_stable/) crate.
 
 // Branch prediction hint. This is currently only available on nightly.
 #[cfg(feature = "nightly")]
@@ -24,7 +27,8 @@ pub use core::intrinsics::{likely, unlikely};
 #[cold]
 const fn cold() {}
 
-/// This works as a compiler hint that the given boolean is likely to be true.
+/// Returns the boolean passed to it while hinting to the compiler that it is likely to be true.
+/// This function brings [likely](core::intrinsics::likely) to stable Rust.
 /// # Example
 /// ```
 /// # use branch_hints::likely;
@@ -42,7 +46,8 @@ pub const fn likely(b: bool) -> bool {
     b
 }
 
-/// This works as a compiler hint that the given boolean is unlikely to be true.
+/// Returns the boolean passed to it while hinting to the compiler that it is unlikely to be true.
+/// This function brings [unlikely](core::intrinsics::unlikely) to stable Rust.
 /// # Example
 /// ```
 /// # use branch_hints::unlikely;
