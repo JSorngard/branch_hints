@@ -15,6 +15,8 @@
 //! # Notes
 //! This is a very minimal crate. If you want more comprehensive functionality, take a look at the [`likely_stable`](https://docs.rs/likely_stable/latest/likely_stable/) crate.
 
+#![no_std]
+
 // Branch prediction hint. This is currently only available on nightly.
 #[cfg(feature = "nightly")]
 pub use core::intrinsics::{likely, unlikely};
