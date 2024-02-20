@@ -25,7 +25,7 @@ pub use core::intrinsics::{likely, unlikely};
 #[cfg(not(feature = "nightly"))]
 #[inline]
 #[cold]
-const fn cold() {}
+fn cold() {}
 
 /// Returns the boolean passed to it while hinting to the compiler that it is likely to be true.
 /// This function brings [`likely`](core::intrinsics::likely) to stable Rust.
@@ -39,7 +39,7 @@ const fn cold() {}
 /// ```
 #[cfg(not(feature = "nightly"))]
 #[inline]
-pub const fn likely(b: bool) -> bool {
+pub fn likely(b: bool) -> bool {
     if !b {
         cold();
     }
@@ -58,7 +58,7 @@ pub const fn likely(b: bool) -> bool {
 /// ```
 #[cfg(not(feature = "nightly"))]
 #[inline]
-pub const fn unlikely(b: bool) -> bool {
+pub fn unlikely(b: bool) -> bool {
     if b {
         cold();
     }
