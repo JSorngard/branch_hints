@@ -7,7 +7,7 @@ license = "MIT OR Apache-2.0"
 repository = "https://github.com/JSorngard/branch_hints"
 description = "Crate that provides likely and unlikely branch hint functions in stable Rust."
 keywords = ["hint", "likely", "branching", "intrinsics"]
-categories = ["no-std"]
+categories = ["no-std", "no-std::no-alloc"]
 
 [dependencies]
 
