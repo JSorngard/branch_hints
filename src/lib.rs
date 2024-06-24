@@ -17,6 +17,7 @@
 
 #![no_std]
 
+// The branch hint functions `core::intrinsics::likely` and `core::intrinsics::unlikely` are only available on nightly.
 // On stable we can use #[cold] to get a equivalent effect: this attribute
 // suggests that the function is unlikely to be called. This function should
 // be optimized away by the compiler.
