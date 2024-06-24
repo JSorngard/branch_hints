@@ -17,14 +17,14 @@
 
 #![no_std]
 
+#[rustversion::nightly]
 // Branch prediction hint. This is currently only available on nightly.
-#[cfg(feature = "nightly")]
 pub use core::intrinsics::{likely, unlikely};
 
 // On stable we can use #[cold] to get a equivalent effect: this attribute
 // suggests that the function is unlikely to be called. This function should
 // be optimized away by the compiler.
-#[cfg(not(feature = "nightly"))]
+#[rustversion::not(nightly)]
 #[inline]
 #[cold]
 fn cold() {}
@@ -39,7 +39,7 @@ fn cold() {}
 ///     println!("It's nonzero!");
 /// }
 /// ```
-#[cfg(not(feature = "nightly"))]
+#[rustversion::not(nightly)]
 #[inline]
 pub fn likely(b: bool) -> bool {
     if !b {
@@ -58,7 +58,7 @@ pub fn likely(b: bool) -> bool {
 ///     println!("We found the meaning of life, the universe, and everything");
 /// }
 /// ```
-#[cfg(not(feature = "nightly"))]
+#[rustversion::not(nightly)]
 #[inline]
 pub fn unlikely(b: bool) -> bool {
     if b {
