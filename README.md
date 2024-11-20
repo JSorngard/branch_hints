@@ -22,7 +22,7 @@ The functions are taken directly from the [`hashbrown`](https://crates.io/crates
 ## Note
 This is a very minimal crate. If you want more comprehensive functionality, take a look at the [likely_stable](https://crates.io/crates/likely_stable) crate.
 
-`hashbrown`'s implementation of these functions [has been removed](https://github.com/rust-lang/hashbrown/commit/d677fd42df6978522045a9561242588ef970ed0c) with the motivation that they do not help LLVM consistently.
+`hashbrown`'s implementation of these functions [has been removed](https://github.com/rust-lang/hashbrown/issues/482) with the motivation that they do not help LLVM consistently.
 Verify for yourself with benchmarks if these functions do anything for you.
 
 <br>
