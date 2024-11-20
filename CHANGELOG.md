@@ -2,21 +2,25 @@
 
 This document contains all changes to the crate since version 0.4.3
 
+## 0.4.10
+
+- Made the links in the crate docs clickable.
+
 ## 0.4.9
 
-- Format the link to `likely_stable` as an item.
+- Formatted the link to `likely_stable` as an item.
 
 ## 0.4.8
 
-- Add more information and context about `hashbrown`s deprecation.
+- Added more information and context about `hashbrown`s deprecation.
 
 ## 0.4.7
 
-- Add notice to README that these functions were removed from `hashbrown` for not helping LLVM consistently.
+- Added notice to README that these functions were removed from `hashbrown` for not helping LLVM consistently.
 
 ## 0.4.6
 
-- Lower the `rust-version` to 1.38.0 by using Rust edition 2015.
+- Lowered the `rust-version` to 1.38.0 by using Rust edition 2015.
 
 ## 0.4.5
 
