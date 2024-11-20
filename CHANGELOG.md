@@ -2,9 +2,13 @@
 
 This document contains all changes to the crate since version 0.4.3
 
+## 0.4.8
+
+- Add more information and context about `hashbrown`s deprecation.
+
 ## 0.4.7
 
-- Add notice to README that these functions were removed from `hashbrown` for not helping LLVM consistently. Context: https://github.com/rust-lang/hashbrown/issues/482.
+- Add notice to README that these functions were removed from `hashbrown` for not helping LLVM consistently.
 
 ## 0.4.6
 
