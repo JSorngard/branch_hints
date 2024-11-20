@@ -12,8 +12,12 @@
 //! ```
 //! and they should be optimized away by the compiler.
 //!
-//! # Notes
+//! ## Notes
+//!
 //! This is a very minimal crate. If you want more comprehensive functionality, take a look at the [`likely_stable`](https://docs.rs/likely_stable/latest/likely_stable/) crate.
+//!
+//! `hashbrown`'s implementation of these functions [has been removed](https://github.com/rust-lang/hashbrown/issues/482) with the motivation that they do not help LLVM consistently.
+//! Verify for yourself with benchmarks if these functions do anything for you.
 
 #![no_std]
 
