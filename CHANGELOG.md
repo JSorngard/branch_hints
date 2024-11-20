@@ -2,6 +2,10 @@
 
 This document contains all changes to the crate since version 0.4.3
 
+## 0.4.9
+
+- Format the link to `likely_stable` as an item.
+
 ## 0.4.8
 
 - Add more information and context about `hashbrown`s deprecation.
