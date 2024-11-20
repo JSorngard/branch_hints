@@ -2,6 +2,10 @@
 
 This document contains all changes to the crate since version 0.4.3
 
+## 0.4.6
+
+- Lower the `rust-version` to 1.38.0 by using Rust edition 2015.
+
 ## 0.4.5
 
 - Set `rust-version` to 1.56.0, as that patch version is actually also compatible.

@@ -1,14 +1,14 @@
 [package]
 name = "branch_hints"
-version = "0.4.5"
-edition = "2021"
+version = "0.4.6"
+edition = "2015"
 authors = ["Johanna Sörngård (jsorngard@gmail.com)"]
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/JSorngard/branch_hints"
 description = "Crate that provides likely and unlikely branch hint functions in stable Rust."
 keywords = ["hint", "likely", "branching", "intrinsics"]
 categories = ["rust-patterns", "no-std", "no-std::no-alloc"]
-rust-version = "1.56.0"
+rust-version = "1.38.0"
 
 [dependencies]
 
