@@ -34,7 +34,6 @@ fn cold() {}
 /// This function brings [`likely`](core::intrinsics::likely) to stable Rust.
 /// # Example
 /// ```
-/// # extern crate rand;
 /// # use branch_hints::likely;
 /// use rand::prelude::*;
 /// if likely(rand::random::<u64>() > 0) {
@@ -53,7 +52,6 @@ pub fn likely(b: bool) -> bool {
 /// This function brings [`unlikely`](core::intrinsics::unlikely) to stable Rust.
 /// # Example
 /// ```
-/// # extern crate rand;
 /// # use branch_hints::unlikely;
 /// use rand::prelude::*;
 /// if unlikely(rand::random::<u64>() == 42) {

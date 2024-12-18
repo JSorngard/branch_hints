@@ -2,6 +2,10 @@
 
 This document contains all changes to the crate since version 0.4.3
 
+## 0.4.11
+
+- Use edition 2018, as that is available on the MSRV.
+
 ## 0.4.10
 
 - Made the links in the crate docs clickable.
