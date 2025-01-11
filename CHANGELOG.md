@@ -4,6 +4,7 @@ This document contains all changes to the crate since version 0.4.3
 
 ## 0.4.12
 
+- Add CI jobs to test and verify the crate.
 - Add CI status badge to README.
 
 ## 0.4.11
