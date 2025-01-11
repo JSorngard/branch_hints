@@ -37,6 +37,17 @@ jobs:
     - name: Test
       run: cargo test
 
+  verify_rust_version:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: dtolnay/rust-toolchain@stable
+    - uses: taiki-e/install-action@v2
+      with:
+        tool: cargo-msrv
+    - name: Verify msrv
+      run: cargo msrv --output-format minimal verify
+
   doc:
     runs-on: ubuntu-latest
     env:
