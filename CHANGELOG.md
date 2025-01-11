@@ -6,7 +6,7 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 ## Unreleased
 
 - Mark the `cold` function as `#[inline(never)]`.
- This should make LLVM ise the cold calling convension for it.
+ This should make LLVM use the cold calling convension for it.
  Motivation from here: https://www.reddit.com/r/rust/comments/gtcsem/what_does_cold_actually_do/fsas5ip/.
 - Add CI jobs to test and verify the crate.
 - Add CI status badge to README.
