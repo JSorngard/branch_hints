@@ -3,6 +3,7 @@
 [![Crates.io Version](https://img.shields.io/crates/v/branch_hints?logo=rust)](https://crates.io/crates/branch_hints)
 [![docs.rs](https://img.shields.io/docsrs/branch_hints?logo=docsrs)](https://docs.rs/branch_hints/latest/branch_hints/)
 [![Static Badge](https://img.shields.io/badge/github-JSorngard%2Fbranch__hints-8da0cb?logo=github)](https://github.com/JSorngard/branch_hints)
+[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/JSorngard/branch_hints/rust.yml?logo=github&label=CI)](https://github.com/JSorngard/branch_hints/actions/workflows/rust.yml)
 
 This crate provides the functions `likely` and `unlikely` that work as compiler hints for branching.
 
