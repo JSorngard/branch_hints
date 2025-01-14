@@ -26,7 +26,7 @@
 // On stable we can use #[cold] to get an equivalent effect: this attribute
 // suggests that the function is unlikely to be called. This function should
 // be optimized away by the compiler.
-#[inline(never)]
+#[inline(always)]
 #[cold]
 fn cold() {}
 
