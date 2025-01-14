@@ -7,7 +7,7 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 - Add CI jobs to test and verify the crate.
 - Add CI status badge to README.
-- Add benchmarks.
+- Add benchmarks (May be removed before release as this requires an MSRV of 1.60.0).
 
 ## 0.4.11
 
