@@ -1,4 +1,4 @@
-use branch_hints::likely;
+use branch_hints::{likely, unlikely};
 use criterion::{criterion_group, criterion_main, BatchSize, Criterion};
 use rand::{rngs::SmallRng, Rng, SeedableRng};
 use std::hint::black_box;
@@ -30,7 +30,7 @@ fn random_numbers(c: &mut Criterion) {
             BatchSize::SmallInput,
         )
     });
-    group.bench_function("with hints", |b| {
+    group.bench_function("likely", |b| {
         b.iter_batched(
             || (0..N).map(|_| rng.gen()).collect::<Vec<u32>>(),
             |data| {
@@ -43,6 +43,27 @@ fn random_numbers(c: &mut Criterion) {
                                 val.pow(u32::from(val.next_multiple_of(13)))
                                     .checked_div(val + 1)
                                     .unwrap_or(0)
+                            }
+                        })
+                        .sum::<u32>()
+                })
+            },
+            BatchSize::SmallInput,
+        )
+    });
+    group.bench_function("unlikely", |b| {
+        b.iter_batched(
+            || (0..N).map(|_| rng.gen()).collect::<Vec<u32>>(),
+            |data| {
+                black_box({
+                    data.iter()
+                        .map(|&val| {
+                            if unlikely(val <= 1) {
+                                val.pow(u32::from(val.next_multiple_of(13)))
+                                    .checked_div(val + 1)
+                                    .unwrap_or(0)
+                            } else {
+                                1
                             }
                         })
                         .sum::<u32>()
