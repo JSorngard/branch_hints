@@ -28,7 +28,7 @@ The functions are taken directly from the [`hashbrown`](https://crates.io/crates
 This is a very minimal crate. If you want more comprehensive functionality, take a look at the [`likely_stable`](https://crates.io/crates/likely_stable) crate.
 
 Verify for yourself with benchmarks if these functions do anything for you,
-as even the unstable intrinsics sometimes don't do anything: https://github.com/rust-lang/rust/issues/88767.
+as even the unstable intrinsics sometimes don't do anything, or even reduce performance: https://github.com/rust-lang/rust/issues/88767.
 This implementation of them was removed from `hashbrown` for this reason: https://github.com/rust-lang/hashbrown/issues/482.
 
 
