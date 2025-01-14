@@ -8,7 +8,7 @@ repository = "https://github.com/JSorngard/branch_hints"
 description = "Crate that provides likely and unlikely branch hint functions in stable Rust."
 keywords = ["hint", "likely", "branching", "intrinsics"]
 categories = ["rust-patterns", "no-std", "no-std::no-alloc"]
-rust-version = "1.38.0"
+rust-version = "1.60.0"
 
 [dependencies]
 
