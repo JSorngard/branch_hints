@@ -3,15 +3,16 @@
 This document contains all changes to the crate since version 0.4.3.
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## Unreleased
+## 0.5.0
 
-- Add CI jobs to test and verify the crate.
-- Add CI status badge to README.
-- Add benchmarks (May be removed before release as this requires an MSRV of 1.60.0).
+- Updated MSRV to 1.60.0 as the dev-dependencies of the crate now require that.
+- Added CI jobs to test and verify the crate.
+- Added CI status badge to README.
+- Added benchmarks.
 
 ## 0.4.11
 
-- Use edition 2018, as that is available on the MSRV.
+- Updated to edition 2018, as that is available on the MSRV.
 
 ## 0.4.10
 
