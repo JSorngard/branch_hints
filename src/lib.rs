@@ -1,6 +1,7 @@
 //! This crate provides [`likely`] and [`unlikely`] functions that work as compiler hints for branching in stable rust.
 //! They are taken directly from the [`hashbrown`](https://crates.io/crates/hashbrown) crate, all credit belongs to them.
 //! These functions enable constructions like
+//! 
 //! ```
 //! # use branch_hints::likely;
 //! # let condition = true;
@@ -10,6 +11,7 @@
 //!     // error handling code
 //! }
 //! ```
+//! 
 //! and they should be optimized away by the compiler.
 //!
 //! ## Notes
