@@ -25,6 +25,8 @@ The functions are taken directly from the [`hashbrown`](https://crates.io/crates
 
 ## Note
 
+If you are using Rust version 1.95.0 or later you should probably use [`core::hint::cold_path`](https://doc.rust-lang.org/core/hint/fn.cold_path.html).
+
 This is a very minimal crate. If you want more comprehensive functionality, take a look at the [`likely_stable`](https://crates.io/crates/likely_stable) crate.
 
 Verify for yourself with benchmarks if these functions do anything for you,
